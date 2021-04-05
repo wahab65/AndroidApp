@@ -87,7 +87,7 @@ So that question arises that why would one recommend to other users. Once a user
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://imgur.com/LJ3E5p4" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
