@@ -87,7 +87,7 @@ So that question arises that why would one recommend to other users. Once a user
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://imgur.com/LJ3E5p4" width=600>
+<img src="https://github.com/wahab65/AndroidApp/blob/main/Wireframe.jpeg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
