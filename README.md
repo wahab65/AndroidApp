@@ -86,7 +86,6 @@ So that question arises that why would one recommend to other users. Once a user
     * Timeline
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://github.com/wahab65/AndroidApp/blob/main/Wireframe.jpeg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
