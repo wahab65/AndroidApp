@@ -91,7 +91,7 @@ So that question arises that why would one recommend to other users. Once a user
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
-
+https://www.figma.com/proto/hfFkN4FLIG8bCJcLeAzsKv/CodePath-Wireframe-Mock?node-id=1%3A170&scaling=min-zoom&page-id=0%3A1
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
