@@ -89,7 +89,7 @@ So that question arises that why would one recommend to other users. Once a user
 <img src="https://github.com/wahab65/AndroidApp/blob/main/Wireframe.jpeg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="<img src="https://github.com/wahab65/AndroidApp/blob/main/Wireframe.jpeg" width=600>" width=600>
+<img src="https://github.com/wahab65/AndroidApp/blob/main/Digital%20Wireframe.jpg" width=600>
 ### [BONUS] Interactive Prototype
 https://www.figma.com/proto/hfFkN4FLIG8bCJcLeAzsKv/CodePath-Wireframe-Mock?node-id=1%3A170&scaling=min-zoom&page-id=0%3A1
 ## Schema 
