@@ -111,6 +111,8 @@ Deals
 | Brand | String | The brand/company of the deal |
 
 ### Networking
-- [Add list of network requests by screen ]
+
+**list of network requests by screen**
+- Home Feed Screen
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
