@@ -114,6 +114,11 @@ Deals
 
 **List of network requests by screen**
 - Home Feed Screen
-  - (Read/GET
+  - (Read/GET)
+- Post a Deal Screen
+  - (Create/Post)
+- Profile Screen
+  - (Read/GET) GET logged in users post
+  - (Delete) Delete a post 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
