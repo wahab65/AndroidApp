@@ -95,10 +95,20 @@ So that question arises that why would one recommend to other users. Once a user
 https://www.figma.com/proto/hfFkN4FLIG8bCJcLeAzsKv/CodePath-Wireframe-Mock?node-id=1%3A170&scaling=min-zoom&page-id=0%3A1
 
 ## Schema 
-[This section will be completed in Unit 9]
 
 ### Models
-[Add table of models]
+
+Deals
+
+| Property  | Type | Description |
+| --------- | ----- | ---------- |
+| ObjectId | String  | a unique id for the deal |
+| image  | File | image related to the deal that the user posts |
+| Details | String | Detail of the deal |
+| Before_Price | Int | The price of the deal before discount |
+| After_Price | Int |  Price of the deal after discount |
+| Title | String | Title of the deal |
+| Brand | String | The brand/company of the deal |
 
 ### Networking
 - [Add list of network requests by screen ]
