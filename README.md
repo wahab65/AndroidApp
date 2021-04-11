@@ -115,7 +115,8 @@ Deals
 **List of network requests by screen**
 - Home Feed Screen
   - (Read/GET) Query recent/latest Deals 
-         ```java
+         ```javascript
+         
                public void loadTopDeals() {
                       final Deal.Query dealQuery = new Deal.Query();
                       dealQuery.getTop().withUser();
