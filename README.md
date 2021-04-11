@@ -103,10 +103,10 @@ Deals
 | Property  | Type | Description |
 | --------- | ----- | ---------- |
 | ObjectId | String  | a unique id for the deal |
-| image  | File | image related to the deal that the user posts |
+| image  | ParseFile | image related to the deal that the user posts |
 | Details | String | Detail of the deal |
-| Before_Price | Int | The price of the deal before discount |
-| After_Price | Int |  Price of the deal after discount |
+| Before_Price | String | The price of the deal before discount |
+| After_Price | String |  Price of the deal after discount |
 | Title | String | Title of the deal |
 | Brand | String | The brand/company of the deal |
 
@@ -140,7 +140,31 @@ Deals
                    
          ```
 - Post a Deal Screen
-  - (Create/Post)
+  - (Create/Post)Create a new deal for the community
+    ```
+      public void createDeal(String details, ParseFile image, ParseUser user, String before_price, String after_price, String brand) {
+        
+        final Deal newDeal = new Deal();
+        newDeal.setDetails(details);
+        newDeal.setImage(image);
+        newDeal.setUser(user);
+        newDeal.setBeforePrice(before_price);
+        newDeal.setAfterPrice(after_price);
+        newDeal.setBrand(brand);
+        
+        newDeal.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Toast.makeText(getContext(), "Deal Successfully Posted", Toast.LENGTH_SHORT).show();
+                    //TODO: On a successful creation of a deal; reset/refresh the timeline fragment
+                } else {
+                    Toast.makeText(getContext(), "Failed to make post", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    } 
+    ```
 - Profile Screen
   - (Read/GET) GET logged in users post
   - (Delete) Delete a post 
