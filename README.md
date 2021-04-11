@@ -114,7 +114,7 @@ Deals
 
 **List of network requests by screen**
 - Home Feed Screen
-  - (Read/GET)
+  - (Read/GET) Query recent/latest 20 Deals 
 - Post a Deal Screen
   - (Create/Post)
 - Profile Screen
