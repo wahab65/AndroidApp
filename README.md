@@ -114,7 +114,30 @@ Deals
 
 **List of network requests by screen**
 - Home Feed Screen
-  - (Read/GET) Query recent/latest 20 Deals 
+  - (Read/GET) Query recent/latest Deals 
+         ```java
+               public void loadTopDeals() {
+                      final Deal.Query dealQuery = new Deal.Query();
+                      dealQuery.getTop().withUser();
+                      dealQuery.addDescendingOrder(Post.KEY_DATE);
+                      dealQuery.findInBackground(new FindCallback<Post>() {
+                          @Override
+                          public void done(List<Deal> objects, ParseException e) {
+                              if(e == null) {
+                                  dealAdapter.clear();
+                                  for(int i = 0; i < objects.size(); i++) {
+                                      deals.add(objects.get(i));
+                                      dealAdapter.notifyItemInserted(posts.size() - 1);
+                                  }
+                              } else {
+                                  Toast.makeText(getContext(), "Failed query of deals", Toast.LENGTH_SHORT).show();
+                              }
+                              swipeRefreshLayout.setRefreshing(true);
+                          }
+                      });
+                }
+                   
+         ```
 - Post a Deal Screen
   - (Create/Post)
 - Profile Screen
