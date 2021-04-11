@@ -115,7 +115,7 @@ Deals
 **List of network requests by screen**
 - Home Feed Screen
   - (Read/GET) Query recent/latest Deals 
-         ```javascript
+         ```
          
                public void loadTopDeals() {
                       final Deal.Query dealQuery = new Deal.Query();
@@ -123,8 +123,8 @@ Deals
                       dealQuery.addDescendingOrder(Post.KEY_DATE);
                       dealQuery.findInBackground(new FindCallback<Post>() {
                           @Override
-                          public void done(List<Deal> objects, ParseException e) {
-                              if(e == null) {
+                          public void done(List<Deal> objects, ParseException pEx) {
+                              if(pEx == null) {
                                   dealAdapter.clear();
                                   for(int i = 0; i < objects.size(); i++) {
                                       deals.add(objects.get(i));
