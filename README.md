@@ -175,7 +175,7 @@ Deals
                                   dealAdapter.clear();
                                   for(int i = 0; i < objects.size(); i++) {
                                       deals.add(objects.get(i));
-                                      dealAdapter.notifyItemInserted(posts.size() - 1);
+                                      dealAdapter.notifyItemInserted(deals.size() - 1);
                                   }
                               } else {
                                   Toast.makeText(getContext(), "Failed query of deals", Toast.LENGTH_SHORT).show();
@@ -239,6 +239,33 @@ Deals
      
      
      ```
-  - (Delete) Delete a post 
+  - (Delete) Delete a deal by tapping on a button / long tap that brings up a pop-up option menu
+  ```
+     btnDeleteDeal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                user.deleteInBackground() (new DeleteCallback() {
+                    public void done(ParseException e) {
+                        if (e == null) {
+                        // update the recyclerView 
+                        
+                            int position = this.getAbsoluteAdapterPosition();
+                            deals.remove(position);
+                            dealAdapter.notifyItemRemoved(position);
+                            dealAdapter.notifyItemRangeChanged(position, getItemCount());
+                            
+                        //go back to Home class        
+                            final Intent intent = new Intent(DealDetailsActivity.this, HomeActivity.class);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            // Log this error //
+                        }
+                    }
+                });
+            }
+        });
+        ```
+    
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
