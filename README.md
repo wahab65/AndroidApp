@@ -115,6 +115,51 @@ Deals
 ### Networking
 
 **List of network requests by screen**
+- Log-in Screen
+  - (Read/GET) Log into the parse server
+      ```
+        private void login(String username, String password) {
+          ParseUser.logInInBackground(username, password, new LogInCallback() {
+              @Override
+              public void done(ParseUser user, ParseException e) {
+                  if (e == null) {
+                      Toast.makeText(getApplicationContext(), "Login succesful", Toast.LENGTH_SHORT).show();
+                      viewHomeFeedFragment();
+                  } else {
+                      Toast.makeText(getApplicationContext(), "Login failed", Toast.LENGTH_SHORT).show();
+                  }
+              }
+          });
+        }
+    ```
+- Sign-up Screen
+  - (Create) Create a new user on Parse Server and log in immediately
+    ``` 
+    btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+                ParseUser user = new ParseUser();
+                user.setUsername(etUsername.getText().toString());
+                user.setPassword(etPassword.getText().toString());
+                user.setEmail(etEmail.getText().toString());
+                user.put("phone", etPhone.getText().toString());
+
+
+                user.signUpInBackground(new SignUpCallback() {
+                    public void done(ParseException e) {
+                        if (e == null) {
+                            final Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Sign up failed", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+        });
+        ```
 - Home Feed Screen
   - (Read/GET) Query recent/latest Deals 
          ```
