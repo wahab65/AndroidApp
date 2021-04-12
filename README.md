@@ -1,7 +1,7 @@
 Original App Design Project - README Template
 ===
 
-# APP_NAME_HERE(Still Deciding)
+# App Name: Dealio (tentative)
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -22,7 +22,7 @@ So that question arises that why would one recommend to other users. Once a user
 - **Category:** Social Media marketing app
 - **Mobile:** It a mobile app.
 - **Story:**
-- **Market:** 
+- **Market:** E-Commerce, Business, Consumer Goods
 - **Habit:** Shopping
 - **Scope:** A lot of untoched scope that can blow up.
 
@@ -34,10 +34,10 @@ So that question arises that why would one recommend to other users. Once a user
 
 * User can login. Once logged in, the apps saves the account and they don't have to login again.
 * User can post a new deal that the public can see.
-* User can view the latest 50 deals that were posted on the app.
+* User can view the latest 100 deals that were posted on the app in different categories
 * User can navigate through different tabs/fragments such as compose, timeline, profile.
 * User can see his profile and the points he/she has earned when someone buys the product/deal the user has posted or recommended to others.
-* ...
+* User can have a "points" account section which directly correlates to actual money for the user.
 
 **Optional Nice-to-have Stories**
 
@@ -56,7 +56,8 @@ So that question arises that why would one recommend to other users. Once a user
    * Once logged in, the app saves the account and the user doesn't has to login again unless he logs out
 * Timeline/Stream
    * User is able to view through different posts/deals that other users have posted on the app.
-   * This screen allows the user to see basic information of the deal 
+   * This screen allows the user to see basic information of the deal
+   * User is also able to see the current points they have earned on the main page 
 * Detail
     * User is able to see the details of a product/deal.
     * It also allows the user to navigate through the respective app where where the deal is from such as bestbuy. 
@@ -109,6 +110,7 @@ Deals
 | After_Price | String |  Price of the deal after discount |
 | Title | String | Title of the deal |
 | Brand | String | The brand/company of the deal |
+| Location | String | Where the deal is located (online, in-store, etc) |
 
 ### Networking
 
