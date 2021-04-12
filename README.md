@@ -1,4 +1,4 @@
-Original App Design Project - README Template
+Dealio App  - A Better Deals App!
 ===
 
 # App Name: Dealio (tentative)
