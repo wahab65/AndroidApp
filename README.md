@@ -169,6 +169,31 @@ Deals
     ```
 - Profile Screen
   - (Read/GET) GET logged in users post
+     ```
+        protected void queryUsersPost() {
+        ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
+        query.include(Post.KEY_USER);
+        query.whereEqualTo(Post.KEY_USER, ParseUser.getCurrentUser());
+        query.setLimit(20);
+        query.addDescendingOrder(Deal.KEY_CREATED_KEY);
+        query.findInBackground(new FindCallback<Post>() {
+            @Override
+            public void done(List<Deals> deals, ParseException e) {
+                if(e != null){
+                    Log.e(TAG, "Issue with getting deals ", e);
+                    return;
+                }
+                for(Deals deal: deals){
+                    Log.i(TAG, "Deal: " +deal.getDescription() +", username: "+ deal.getUser().getUsername());
+                }
+                allDeals.addAll(deals);
+                adapter.notifyDataSetChanged();
+            }
+        });
+    }
+     
+     
+     ```
   - (Delete) Delete a post 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
