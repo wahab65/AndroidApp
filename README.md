@@ -19,11 +19,11 @@ So that question arises that why would one recommend to other users. Once a user
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:** Social Media marketing app
-- **Mobile:** It a mobile app.
-- **Story:**
-- **Market:** E-Commerce, Business, Consumer Goods
-- **Habit:** Shopping
+- **Category:** Social Media/ E-Commerce
+- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be                 limited to mobile devices, however mobile version could potentially have more features.
+- **Story:** Users will post deals for consumer goods found on the internet, and user will receive  points (based on real money) as an incentive for posting deals based on the amount of clicks the person's deal gets. 
+- **Market:** Any individual could choose to use this app, as it is used to purchase goods at good prices on the internet. Base market: E-Commerce, Business, Consumer Goods
+- **Habit:** This app would be used as often as the individual prefers to check deals. Push notifications will also be sent to a user if their preferred deal has gone live. Addicting App.
 - **Scope:** A lot of untoched scope that can blow up.
 
 ## Product Spec
