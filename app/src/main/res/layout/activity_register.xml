@@ -116,6 +116,8 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="12dp"
         android:fontFamily="@font/aclonica"
+        android:textColor="@color/red"
+        android:backgroundTint="@color/yellow"
         android:text="Register"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
