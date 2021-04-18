@@ -13,6 +13,7 @@
         android:fontFamily="@font/aclonica"
         android:text="Dealio"
         android:textColor="#FFFFFF"
+        android:background=""
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,11 +96,14 @@
         android:layout_marginEnd="12dp"
         android:fontFamily="@font/aclonica"
         android:text="Login"
+        android:backgroundTint="@color/yellow"
+        android:backgroundTintMode="src_atop"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+        app:rippleColor="#F8F0F0" />
 
     <TextView
         android:id="@+id/loginText"
