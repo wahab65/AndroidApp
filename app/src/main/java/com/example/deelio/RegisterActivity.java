@@ -15,9 +15,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
     //Declare all elements that will need probable coding
@@ -26,6 +33,8 @@ public class RegisterActivity extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth fAuth;
     EditText fullName, registerEmail, registerPassword;
+    FirebaseFirestore fStore;
+    String userID;
 
     public static final String TAG = "RegisterActivity";
 
@@ -45,6 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
         registerPassword = findViewById(R.id.registerPassword);
 
         fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         //if USer is already logged in
         if(fAuth.getCurrentUser() != null){
             final Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
@@ -66,6 +76,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = registerEmail.getText().toString().trim();
                 String password = registerPassword.getText().toString().trim();
+                String name = fullName.getText().toString();
                 //to check if user email is empty
                 if(TextUtils.isEmpty(email)){
                     registerEmail.setError("Email is Required!");
@@ -90,6 +101,23 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(RegisterActivity.this, "User Successfully Created", Toast.LENGTH_SHORT).show();
+                            userID = fAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = fStore.collection("users").document(userID);
+                            Map<String,Object> user = new HashMap<>();
+                            user.put("Full Name",name);
+                            user.put("Email", email);
+                            user.put("Password", password);
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d(TAG, "onSuccess: user profile is created for "+ userID);
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d(TAG, "onFailure to create user: " +e.toString());
+                                }
+                            });
                             Log.i(TAG, " User has been succesfully registerd");
                             final Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                             startActivity(intent);
