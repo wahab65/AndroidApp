@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "594228905827",
+    "project_id": "deelio-203b7",
+    "storage_bucket": "deelio-203b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594228905827:android:eb01dadc498c75ccb63556",
+        "android_client_info": {
+          "package_name": "com.example.deelio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594228905827-tt8gifnlmfjsu55taumk1ib6m1sn37o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIwXFXxO7JH083IPYKlKI3yiUSa9ic1rA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594228905827-tt8gifnlmfjsu55taumk1ib6m1sn37o9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
