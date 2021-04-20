@@ -33,7 +33,7 @@ So that question arises that why would one recommend to other users. Once a user
 ### App Walkthough GIF
 
 Here's a walkthrough of implemented user stories:
-
+<img src="https://github.com/wahab65/AndroidApp/blob/master/wt1.gif" width=350><br>
 
 ### Database Screenshot
 
