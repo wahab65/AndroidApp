@@ -12,17 +12,17 @@ So that question arises that why would one recommend to other users. Once a user
 
 #### REQUIRED 
 
-- [ ] User can login to his parse account
-- [ ] User can logout of his account
-- [ ] Create a xml layout and activity for Login Screen
-     - [ ] Login Activity
-     - [ ] Register Activity
-- [ ] Setup a new Parse Server
+- [x] User can login to his parse account
+- [x] User can logout of his account
+- [x] Create a xml layout and activity for Login Screen
+     - [x] Login Activity
+     - [x] Register Activity
+- [x] Setup a new Parse Server
      - [ ] Use Amazon S3 or Back4App
-     - [ ] Or maybe use Firebase
-- [ ] Test deployment
-- [ ] Setup Local Parse Dashboard
-- [ ] Add Parse Client to Project
+     - [x] Or maybe use Firebase
+- [x] Test deployment
+- [x] Setup Local Parse Dashboard
+- [x] Add Parse Client to Project
 
 ### Optional
 
@@ -37,6 +37,6 @@ Here's a walkthrough of implemented user stories:
 
 ### Database Screenshot
 
-<img src='https://github.com/wahab65/AndroidApp/blob/master/Firebase.png' width=250><br>
+<img src='https://github.com/wahab65/AndroidApp/blob/master/Firebase.png' width=1000><br>
 
 
