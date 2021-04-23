@@ -3,13 +3,17 @@ package com.example.deelio;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-
+import android.os.Bundle;
+import android.view.MenuItem;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.example.deelio.Fragments.HomeFragment;
 import com.example.deelio.Fragments.PostFragment;
 import com.example.deelio.Fragments.ProfileFragment;
@@ -25,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        //bottomNav reference
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        //bind a navListener
+        bottomNav.setOnNavigationItemSelectedListener( navListener);
+        //default navigation set to HomeFragment
+        getSupportFragmentManager().beginTransaction().replace(R.id.flContainer, new HomeFragment()).commit();
+
     }
 
     public void logout(View view) {
@@ -34,18 +46,29 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-    //define fragments and manage
-    final FragmentManager fragmentManager = getSupportFragmentManager();
-    final Fragment homeFragment = new HomeFragment();
-    final Fragment postFragment = new PostFragment();
-    final Fragment profileFragment = new ProfileFragment();
-
-    //get bottomNav referrence
-//    BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
-
-
-
+    //setup navListener
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment selectedFragment = null;
+            switch (item.getItemId()) {
+                case R.id.miAddPost:
+                    selectedFragment = new PostFragment();
+                    break;
+                case R.id.miHome:
+                    selectedFragment = new HomeFragment();
+                    break;
+                case R.id.miProfile:
+                    selectedFragment = new ProfileFragment();
+                    break;
+            }
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flContainer, selectedFragment)
+                    .commit();
+            return true;
+        }
+    };
 
 
 
