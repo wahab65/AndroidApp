@@ -19,12 +19,16 @@ import com.example.deelio.Fragments.PostFragment;
 import com.example.deelio.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
+    private FirebaseAuth mFirebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getSupportActionBar().hide();
+        mFirebaseAuth = FirebaseAuth.getInstance();
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -37,6 +41,20 @@ public class MainActivity extends AppCompatActivity {
         //default navigation set to HomeFragment
         getSupportFragmentManager().beginTransaction().replace(R.id.flContainer, new HomeFragment()).commit();
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+        if(mFirebaseUser != null){
+            //there is user logged in
+
+        }else{
+            //no user logged in
+            startActivity(new Intent(this, LoginActivity.class));
+
+        }
     }
 
     public void logout(View view) {

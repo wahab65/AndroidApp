@@ -1,17 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.PostFragment">
+    tools:context=".Fragments.PostFragment"
+    android:id="@+id/frameLayout">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_post_fragment"
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="-49dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Post a New Deal"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="30sp"/>
 
-</FrameLayout>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        tools:layout_conversion_absoluteHeight="731dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <EditText
+        android:id="@+id/dealName"
+        android:layout_width="381dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Deal Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <EditText
+        android:id="@+id/dealURL"
+        android:layout_width="348dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/dealName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/imageView5"
+        android:ems="10"
+        android:hint="Deal URL"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="266dp"
+        android:layout_height="258dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="384dp"
+        android:src="@drawable/add_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="32dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/dealName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/url"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <EditText
+        android:id="@+id/dealPrice"
+        android:layout_width="150dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="189dp"
+        android:layout_toEndOf="@+id/imageView6"
+        android:ems="10"
+        android:hint="Deal Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <EditText
+        android:id="@+id/brandName"
+        android:layout_width="185dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/dealURL"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Company (Optional)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="32dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/dollar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <EditText
+        android:id="@+id/dealDescription"
+        android:layout_width="379dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/dealPrice"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPassword" />
+
+</RelativeLayout>
