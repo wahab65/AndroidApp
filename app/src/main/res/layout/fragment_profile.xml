@@ -14,4 +14,14 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"/>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7C4DFF"
+        android:onClick="logout"
+        android:text="LogOut"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints" />
+
 </FrameLayout>

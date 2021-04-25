@@ -1,5 +1,6 @@
 package com.example.deelio.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,18 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.deelio.LoginActivity;
+import com.example.deelio.MainActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.example.deelio.R;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +32,7 @@ public class HomeFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    Context ctx;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -55,6 +67,10 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
+
     }
 
     @Override
@@ -63,4 +79,43 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
+
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        //initial test for userAuth by making a toast to get user instance
+        // ===== start deleting from here...
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                String email =null;
+                if (user != null)  email = user.getEmail();
+                Toast.makeText(getActivity(),"Logged in as: "+email,Toast.LENGTH_SHORT).show();
+        // ===== until this line ////
+
+
+
+        // TODO: Below are the sub-tasks to complete in this fragment
+
+            //load top deals
+
+            //find RecyclerView to bind
+
+            //init deals arraylist
+
+            //construct adapter
+
+            //construct recyclerView layout
+
+            //implement scroll listener
+
+            //implement a swipe refresh
+
+            //implement a load progress animation
+
+
+
+
+
+    }
+
 }

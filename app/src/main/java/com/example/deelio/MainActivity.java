@@ -57,12 +57,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void logout(View view) {
-        FirebaseAuth.getInstance().signOut();
-        final Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(intent);
-        finish();
-    }
+
 
     //setup navListener
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {

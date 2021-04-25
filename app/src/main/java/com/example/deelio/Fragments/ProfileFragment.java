@@ -1,5 +1,6 @@
 package com.example.deelio.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.deelio.LoginActivity;
+import com.example.deelio.MainActivity;
 import com.example.deelio.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,5 +66,17 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_profile, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+
+
+    }
+    public void logout(View view) {
+        FirebaseAuth.getInstance().signOut();
+        final Intent intent = new Intent(getActivity(), LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
