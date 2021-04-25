@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.deelio.LoginActivity;
 import com.example.deelio.MainActivity;
@@ -29,6 +30,7 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Button btnLogout;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -70,6 +72,15 @@ public class ProfileFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
+        btnLogout= view.findViewById(R.id.btnLogout);
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                logout(view);
+            }
+        });
+
 
 
     }
@@ -77,6 +88,6 @@ public class ProfileFragment extends Fragment {
         FirebaseAuth.getInstance().signOut();
         final Intent intent = new Intent(getActivity(), LoginActivity.class);
         startActivity(intent);
-        finish();
+        getActivity().finish();
     }
 }
