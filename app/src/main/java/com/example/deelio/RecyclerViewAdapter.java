@@ -54,7 +54,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         Glide.with(context)
                 .load(deal.getDealImage())
-                .bitmapTransform(new RoundedCornersTransformation(context, 10, 0))
+                .transform(new RoundedCornersTransformation(context, 10, 0))
                 .into(viewHolder.ivDealImage);
 
 

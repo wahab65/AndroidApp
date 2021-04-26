@@ -6,6 +6,24 @@ For example lets suppose a user is shopping online at BestBuy and he sees an ext
 
 So that question arises that why would one recommend to other users. Once a user posts a deal and when other users use that deal/link to buy the product, the user will be able to earn points. These points can be changed into money that he or she can use to buy other products on the internet through this app.
 
+## Unit 11
+
+### User Stories
+
+#### REQUIRED
+
+- [ ] Setup Main activity class
+- [ ]  Create three fragment layouts and integrate them in the main activity
+- [ ]  Upload image to firebase
+- [ ]  Create XML layouts for the three fragments
+- [ ]  Create Deals Adapter Class
+
+
+### Optional
+- [ ] Create splash for the app
+- [ ] Add a toolbar on the Homa page
+- [ ] 
+
 ## Unit 10
 
 ### User Stories
@@ -36,6 +54,7 @@ Here's a walkthrough of implemented user stories:
 <br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt1.gif" width=350><br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt2.gif" width=350><br>
+
 
 
 ### Database Screenshot
