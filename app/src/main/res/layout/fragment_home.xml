@@ -14,6 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTopDeals"
+            android:layout_width="414dp"
+            android:layout_height="621dp"
+            android:layout_marginBottom="24dp"
+            android:background="#51E88181"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0" />
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -58,12 +71,14 @@
 
 
         <SearchView
+            android:id="@+id/svSearchBox"
             android:layout_width="345dp"
             android:layout_height="37dp"
             android:layout_marginStart="58dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_white"
             android:backgroundTint="@color/white"
+            android:clickable="true"
             android:iconifiedByDefault="false"
             android:queryHint="Search Top Deals"
             app:defaultQueryHint="Search Top Deals"
@@ -72,22 +87,19 @@
             app:queryHint="Search Top Deals" />
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:layout_width="match_parent"
-            android:layout_height="634dp"
+            android:id="@+id/swipeRefLayout"
+            android:layout_width="412dp"
+            android:layout_height="631dp"
+            android:layout_marginBottom="8dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.577">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvTopDeals"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0">
 
 
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
