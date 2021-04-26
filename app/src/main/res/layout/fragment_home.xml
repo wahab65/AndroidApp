@@ -10,22 +10,22 @@
                             inside a SwipeRefreshLayout,
                                 inside a ConstraintLayout,
                                     inside a FrameLayout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvTopDeals"
-            android:layout_width="414dp"
-            android:layout_height="621dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:background="#51E88181"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -39,7 +39,9 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            app:titleMarginEnd="5dp"
+            app:titleMarginStart="5dp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
@@ -105,5 +107,5 @@
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 </FrameLayout>
