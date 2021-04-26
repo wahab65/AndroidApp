@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Deelio);
         this.getSupportActionBar().hide();
         mFirebaseAuth = FirebaseAuth.getInstance();
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
