@@ -1,0 +1,518 @@
+[
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_add_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_5.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_5.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_44.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_44.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_profile_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-mdpi\\ic_profile_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_21.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_21.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_splash.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_profile_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_profile_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_add_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_add_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_28.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_28.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_profile_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-mdpi\\ic_profile_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_splash.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_browse.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_browse.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_add_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_add_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_36.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_36.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dollar.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\dollar.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_add_inactive.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_add_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_4.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_4.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_45.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_45.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\font_abril_fatface.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\font\\abril_fatface.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_browse_inactive.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_browse_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_add_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_add_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_13.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_13.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_browse.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_browse.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_35.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_35.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_browse.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_browse.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_22.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_22.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_29.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_29.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_browse_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_browse_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_12.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_12.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_profile_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_profile_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_3.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_3.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_38.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_38.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_splash.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_15.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_15.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-mdpi\\ic_add_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_splash.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_49.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_49.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_browse.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_browse.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_23.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_23.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_50.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_50.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_18.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_18.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add_tab.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\add_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\font_aclonica.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\font\\aclonica.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_20.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_20.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_33.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_33.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_46.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_46.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_add_active.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_add_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_splash.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_43.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_43.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_6.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_6.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_30.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_30.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_10.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_10.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_browse.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_browse.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_17.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_17.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_40.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_40.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_25.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_25.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_browse_tab.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\browse_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\animator_custombutton.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\animator\\custombutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_9.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_9.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_profile_inactive.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-anydpi\\ic_profile_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\menu\\menu_bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_post.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\layout\\fragment_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_image.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\splash_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_browse_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-mdpi\\ic_browse_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_47.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_47.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_2.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_2.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_browse_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_browse_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_profile_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_profile_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_browse_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_browse_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_8.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_8.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_41.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_41.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logoanimlist.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\logoanimlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_26.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_26.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_39.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_39.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_profile_active.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-anydpi\\ic_profile_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_32.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_32.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_splash.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-mdpi\\ic_add_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame0.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame0.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_1.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_1.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_48.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_48.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_16.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_16.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_19.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_19.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_7.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_7.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_42.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_42.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_add_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_add_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_white.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\rounded_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_tab.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\profile_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_34.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_34.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_profile_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_profile_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_add_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_add_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile_active.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile_active.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_31.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_31.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_browse.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-mdpi\\ic_browse.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_24.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_24.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_browse_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_browse_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.jpg.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\background.jpg"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_add_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_add_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_11.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_11.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_37.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_37.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_browse.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_browse.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_browse_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_browse_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_14.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_14.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_27.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\frame_27.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_url.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\src\\main\\res\\drawable\\url.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_add_inactive.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_splash.png.flat",
+        "source": "C:\\Users\\umark\\AndroidStudioProjects\\AndroidApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_splash.png"
+    }
+]
