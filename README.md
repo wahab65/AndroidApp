@@ -4,7 +4,7 @@ Dealio App  - A Better Deals App!
 # App Name: Dealio (tentative)
 
 ## User Story and Walkthrough
-Check master branch for this content
+**Check master branch for this content**
 
 ## Table of Contents
 1. [Overview](#Overview)
