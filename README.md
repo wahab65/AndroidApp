@@ -54,6 +54,7 @@ Here's a walkthrough of implemented user stories:
 <br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt1.gif" width=350><br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt2.gif" width=350><br>
+<img src="https://github.com/wahab65/AndroidApp/blob/master/wt3.gif" width=350><br>
 
 
 
