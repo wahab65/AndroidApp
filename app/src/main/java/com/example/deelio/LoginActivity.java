@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        this.getSupportActionBar().hide();
+//        this.getSupportActionBar().hide();
 
         //list all element bindings here
         tvGoToRegisterActivity= (TextView)findViewById(R.id.loginNregisterSwitcher);
