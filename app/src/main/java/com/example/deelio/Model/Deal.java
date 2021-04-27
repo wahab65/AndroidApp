@@ -4,6 +4,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Deal {
+    private String UserReference = ""; //to retain the reference user who creates this deal
+    private String DealId = ""; //a unique id to assign on every single deal
     private String DealImage = "";
     private String Title = "";
     private String BeforePrice= "";

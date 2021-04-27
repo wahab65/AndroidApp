@@ -1,25 +1,20 @@
 package com.example.deelio;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.os.Bundle;
-import android.view.MenuItem;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import com.example.deelio.Fragments.HomeFragment;
 import com.example.deelio.Fragments.PostFragment;
 import com.example.deelio.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
@@ -29,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTheme(R.style.Theme_Deelio);
         this.getSupportActionBar().hide();
+
         mFirebaseAuth = FirebaseAuth.getInstance();
+
 
         setContentView(R.layout.activity_main);
 

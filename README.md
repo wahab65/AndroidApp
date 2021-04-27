@@ -12,17 +12,22 @@ So that question arises that why would one recommend to other users. Once a user
 
 #### REQUIRED
 
-- [ ] Setup Main activity class
-- [ ]  Create three fragment layouts and integrate them in the main activity
-- [ ]  Upload image to firebase
-- [ ]  Create XML layouts for the three fragments
-- [ ]  Create Deals Adapter Class
+- [x] Setup Main activity class
+- [x]  Create three fragment layouts and integrate them in the main activity
+- [x]  Upload image to firebase
+- [x]  Create XML layouts for the three fragments
+- [x]  Create Deals Adapter Class
+- [x]  Upload picture from the gallery
+- [x]  Setup the layout for Post Fragment
 
 
 ### Optional
-- [ ] Create splash for the app
-- [ ] Add a toolbar on the Homa page
-- [ ] 
+- [x] Create splash for the app
+- [x] Add a toolbar on the Home page
+- [x]  Upload the image to Firebase Storage
+
+### App Walkthough GIF
+<img src="https://github.com/wahab65/AndroidApp/blob/master/wt3.gif" width=350><br>
 
 ## Unit 10
 
@@ -54,6 +59,7 @@ Here's a walkthrough of implemented user stories:
 <br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt1.gif" width=350><br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt2.gif" width=350><br>
+
 
 
 
