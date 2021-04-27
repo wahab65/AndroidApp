@@ -168,7 +168,7 @@ public class HomeFragment extends Fragment {
         deals.add(thirdMockDeal);
         deals.add(fourthMockDeal);
         deals.add(fifthMockDeal);
-        
+
         deals.add(firstMockDeal);
         deals.add(secondMockDeal);
         deals.add(thirdMockDeal);
