@@ -55,20 +55,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                app:cardCornerRadius="250dp">
-
                 <ImageView
                     android:id="@+id/ivUserImage"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_profile_active" />
-
-            </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 

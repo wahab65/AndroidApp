@@ -72,7 +72,7 @@ public class ProfileFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        btnLogout= view.findViewById(R.id.btnLogout);
+        btnLogout= view.findViewById(R.id.btnLogout2);
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,8 +80,6 @@ public class ProfileFragment extends Fragment {
                 logout(view);
             }
         });
-
-
 
     }
     public void logout(View view) {

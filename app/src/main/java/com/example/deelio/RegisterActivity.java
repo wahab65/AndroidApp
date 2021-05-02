@@ -20,6 +20,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -34,6 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
     FirebaseAuth fAuth;
     EditText fullName, registerEmail, registerPassword;
     FirebaseFirestore fStore;
+    DatabaseReference rootRef;
     String userID;
 
     public static final String TAG = "RegisterActivity";
@@ -43,7 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        this.getSupportActionBar().hide();
+//        this.getSupportActionBar().hide();
 
         //list all element bindings here
         tvGoToLoginActivity= (TextView)findViewById(R.id.loginNregisterSwitcher);
@@ -99,14 +102,27 @@ public class RegisterActivity extends AppCompatActivity {
                 fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, "User Successfully Created", Toast.LENGTH_SHORT).show();
-                            userID = fAuth.getCurrentUser().getUid();
-                            DocumentReference documentReference = fStore.collection("users").document(userID);
-                            Map<String,Object> user = new HashMap<>();
-                            user.put("Full Name",name);
-                            user.put("Email", email);
-                            user.put("Password", password);
+                            DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
+                            String userId = ref.push().getKey();
+
+                            // DocumentReference documentReference = fStore.collection("users").document(userID);
+                            Map<String, Object> map = new HashMap<>();
+                            int points = 10;
+                            map.put("Full Name", name);
+                            map.put("Email", email);
+                            map.put("Password", password);
+                            map.put("Points", points);
+                            ref.child(userId).setValue(map);
+
+                            Log.i(TAG, " User has been succesfully registerd");
+                            final Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
+
+
+                            /*
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
@@ -126,6 +142,10 @@ public class RegisterActivity extends AppCompatActivity {
                             Toast.makeText(RegisterActivity.this, "Error: !", Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                             Log.e(TAG, "Failed to Register User", task.getException());
+
+                        }
+                        */
+
 
                         }
                     }

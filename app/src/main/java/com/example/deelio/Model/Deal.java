@@ -1,13 +1,18 @@
 package com.example.deelio.Model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Deal {
-    private String UserReference = ""; //to retain the reference user who creates this deal
+import java.io.Serializable;
+
+public class Deal implements Parcelable, Serializable {
+    private String UserReference = ""; //to retain the reference user (publisher) who creates this deal
     private String DealId = ""; //a unique id to assign on every single deal
     private String DealImage = "";
     private String Title = "";
+    private String DealURL="";
     private String BeforePrice= "";
     private String AfterPrice= "";
     private String StoreName= "";
@@ -15,7 +20,7 @@ public class Deal {
     private String CommentCount= "";
     private String Details= "";
 
-    public Deal(String dealImage, String title, String beforePrice, String afterPrice, String storeName, String likeCount, String commentCount, String details) {
+    public Deal(String dealImage, String title, String beforePrice, String afterPrice, String storeName, String likeCount, String commentCount, String details, String url) {
         DealImage = dealImage;
         Title = title;
         BeforePrice = beforePrice;
@@ -24,7 +29,37 @@ public class Deal {
         LikeCount = likeCount;
         CommentCount = commentCount;
         Details = details;
+        DealURL = url;
     }
+
+    public Deal() {
+    }
+
+    protected Deal(Parcel in) {
+        UserReference = in.readString();
+        DealId = in.readString();
+        DealImage = in.readString();
+        Title = in.readString();
+        DealURL= in.readString();
+        BeforePrice = in.readString();
+        AfterPrice = in.readString();
+        StoreName = in.readString();
+        LikeCount = in.readString();
+        CommentCount = in.readString();
+        Details = in.readString();
+    }
+
+    public static final Creator<Deal> CREATOR = new Creator<Deal>() {
+        @Override
+        public Deal createFromParcel(Parcel in) {
+            return new Deal(in);
+        }
+
+        @Override
+        public Deal[] newArray(int size) {
+            return new Deal[size];
+        }
+    };
 
     public String getDealImage() { return DealImage; }
     public String getTitle() { return Title; }
@@ -36,5 +71,23 @@ public class Deal {
     public String getDetails() { return Details; }
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
 
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(UserReference);
+        parcel.writeString(DealId);
+        parcel.writeString(DealImage);
+        parcel.writeString(Title);
+        parcel.writeString(DealURL);
+        parcel.writeString(BeforePrice);
+        parcel.writeString(AfterPrice);
+        parcel.writeString(StoreName);
+        parcel.writeString(LikeCount);
+        parcel.writeString(CommentCount);
+        parcel.writeString(Details);
+    }
 }

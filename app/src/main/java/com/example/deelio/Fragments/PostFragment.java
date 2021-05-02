@@ -1,5 +1,6 @@
 package com.example.deelio.Fragments;
 
+import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
@@ -17,17 +18,30 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.deelio.MainActivity;
 import com.example.deelio.Model.Deals;
 import com.example.deelio.R;
+import com.example.deelio.RegisterActivity;
+import com.google.android.gms.tasks.Continuation;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
+import com.google.firebase.database.collection.*;
+
+import java.util.HashMap;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -35,13 +49,17 @@ import static android.app.Activity.RESULT_OK;
 public class PostFragment extends Fragment {
 
     public static final String TAG = "Post_Fragments";
-    private EditText dealName, dealURL, dealPrice, brandName, dealDescription;
+    private TextView dealName, dealURL, dealPrice, originalPrice, brandName, dealDescription;
+
+    private Uri imageUri;
+    private String imageUrl;
+
     private ImageView uploadImage;
     private Button uploadButton;
     private ProgressBar progressBar2;
     private StorageReference reference = FirebaseStorage.getInstance().getReference();
     private FirebaseFirestore fstore = FirebaseFirestore.getInstance();
-    private Uri imageUri;
+
 
 
     public PostFragment() {
@@ -55,13 +73,14 @@ public class PostFragment extends Fragment {
     }
 
 
-
+    //TODO:  make a field to allow getting original price
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         dealName = view.findViewById(R.id.dealName);
         dealURL = view.findViewById(R.id.dealURL);
         dealPrice = view.findViewById(R.id.dealPrice);
+        originalPrice = view.findViewById(R.id.dealPrice); //wrong TO-DO: make a field to allow getting original price
         brandName = view.findViewById(R.id.brandName);
         dealDescription = view.findViewById(R.id.dealDescription);
         uploadImage = view.findViewById(R.id.uploadImage);
@@ -93,6 +112,8 @@ public class PostFragment extends Fragment {
 
     }
 
+    /*
+    //Previous Upload Code:
     private void uploadtoFirebase(Uri uri) {
         StorageReference fileRef = reference.child(System.currentTimeMillis() + "." + getFileEXtension(uri));
         fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -120,13 +141,72 @@ public class PostFragment extends Fragment {
         });
 
     }
+    */
 
-    private String getFileEXtension(Uri uri) {
-        ContentResolver cr = getActivity().getApplicationContext().getContentResolver();
-        MimeTypeMap mime= MimeTypeMap.getSingleton();
-        return mime.getExtensionFromMimeType(cr.getType(uri));
+    //New Upload Code:
+    private void uploadtoFirebase(Uri imageUri){
 
+
+        final ProgressDialog pd = new ProgressDialog(getContext());
+        pd.setMessage("Submitting Your Deal Now!");
+        pd.show();
+
+
+        if (imageUri != null){
+            final StorageReference filePath = FirebaseStorage.getInstance().getReference("Deals").child(System.currentTimeMillis() + "." + MimeTypeMap.getFileExtensionFromUrl(imageUri.toString()));
+
+
+            StorageTask uploadtask = filePath.putFile(imageUri);
+            uploadtask.continueWithTask(new Continuation() {
+                @Override
+                public Object then(@NonNull Task task) throws Exception {
+                    if (!task.isSuccessful()){
+                        throw task.getException();
+                    }
+
+                    return filePath.getDownloadUrl();
+                }
+            }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                @Override
+                public void onComplete(@NonNull Task<Uri> task) {
+                    Uri downloadUri = task.getResult();
+                    imageUrl = downloadUri.toString();
+
+                    DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Deals");
+                    String dealId = ref.push().getKey();
+
+                    HashMap<String , Object> map = new HashMap<>();
+                    map.put("DealId" , dealId);
+                    map.put("Title" , dealName.getText().toString());
+                    map.put("DealImage" , imageUrl);
+                    map.put("DealURL" , dealURL.getText().toString());
+                    map.put("AfterPrice" , dealPrice.getText().toString());
+                    map.put("BeforePrice" , originalPrice.getText().toString());
+                    map.put("StoreName" , brandName.getText().toString());
+                    map.put("Details" , dealDescription.getText().toString());
+                    map.put("UserReference" , FirebaseAuth.getInstance().getCurrentUser().getUid());
+
+
+                    ref.child(dealId).setValue(map);
+
+                    pd.dismiss();
+
+
+                    final Intent intent = new Intent(getActivity(),MainActivity.class );
+                    startActivity(intent);
+                    getActivity().finish();
+                }}).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            });
+        } else {
+            Toast.makeText(this.getContext(), "No image was selected!", Toast.LENGTH_SHORT).show();
+        }
     }
+
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -141,7 +221,6 @@ public class PostFragment extends Fragment {
 
 
     }
-
 
 
 }
