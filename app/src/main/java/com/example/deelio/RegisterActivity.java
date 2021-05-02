@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -114,7 +115,7 @@ public class RegisterActivity extends AppCompatActivity {
                             map.put("username", name);
                             map.put("points", points);
                             map.put("imageurl", "");
-                            map.put("id",userId);
+                            map.put("id", userId);
 
                             ref.child(fAuth.getCurrentUser().getUid()).setValue(map);
 
@@ -124,36 +125,33 @@ public class RegisterActivity extends AppCompatActivity {
                             finish();
 
 
-                            /*
-                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            /*documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    Log.d(TAG, "onSuccess: user profile is created for "+ userID);
+                                    Log.d(TAG, "onSuccess: user profile is created for " + userID);
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG, "onFailure to create user: " +e.toString());
+                                    Log.d(TAG, "onFailure to create user: " + e.toString());
                                 }
                             });
                             Log.i(TAG, " User has been succesfully registerd");
                             final Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                             startActivity(intent);
                             finish();
-                        }else{
+                        } else {
                             Toast.makeText(RegisterActivity.this, "Error: !", Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                             Log.e(TAG, "Failed to Register User", task.getException());
 
                         }
-                        */
+*/
 
-
-                        }
+                    }
                     }
                 });
 
             }
         });
-    }
-}
+    }}

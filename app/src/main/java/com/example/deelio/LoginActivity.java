@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.*;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -32,10 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 //        this.getSupportActionBar().hide();
-
+        //changeStatusBarColor();
         //list all element bindings here
         tvGoToRegisterActivity= (TextView)findViewById(R.id.loginNregisterSwitcher);
-        ivAnimatedLogo = (ImageView) findViewById(R.id.imageViewAnimLogo) ;
+        //ivAnimatedLogo = (ImageView) findViewById(R.id.imageViewAnimLogo) ;
         loginButton = findViewById(R.id.loginButton);
         loginprogressBar = findViewById(R.id.loginprogressBar);
         loginEmail = findViewById(R.id.loginEmail);
@@ -53,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
 //            startActivity(intent);
 //            finish();
 //        }
+
 
 
         loginButton.setOnClickListener(new OnClickListener() {
@@ -108,16 +112,23 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        ivAnimatedLogo.post(new Runnable() {
+      /*  ivAnimatedLogo.post(new Runnable() {
             @Override
             public void run() {
                 AnimationDrawable spinnerAnim = (AnimationDrawable) ivAnimatedLogo.getDrawable();
                     spinnerAnim.start();
             }
-        });
+        });*/
 
     }
-
+   /* public void changeStatusBarColor() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+//            window.setStatusBarColor(Color.TRANSPARENT);
+            window.setStatusBarColor(getResources().getColor(R.color.register_bk_color));
+        }
+    }*/
 
 
 }

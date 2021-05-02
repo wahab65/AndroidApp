@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,6 +31,7 @@ public class DealDetailsActivity extends AppCompatActivity {
     TextView tv_AfterPrice2;
     TextView tvDetails2;
     TextView tv_StoreName2;
+    Button UrlButton;
 
     String[] dealImages = {"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401758_sd.jpg;maxHeight=640;maxWidth=550",
             "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401758_sd.jpg;maxHeight=640;maxWidth=550",
@@ -50,6 +53,7 @@ public class DealDetailsActivity extends AppCompatActivity {
         tv_AfterPrice2=  findViewById(R.id.tv_AfterPrice2);
         tvDetails2=  findViewById(R.id.tvDetails2);
         tv_StoreName2=  findViewById(R.id.tv_StoreName2);
+        UrlButton = findViewById(R.id.UrlButton);
 
         deal = getIntent().getParcelableExtra((Deal.class.getSimpleName()));
 
@@ -63,6 +67,7 @@ public class DealDetailsActivity extends AppCompatActivity {
         dealImages[1]= deal.getDealImage();
         dealImages[2]= deal.getDealImage();
     }
+
 
     ImageListener imageListener = new ImageListener() {
         @Override
