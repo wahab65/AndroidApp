@@ -110,11 +110,13 @@ public class RegisterActivity extends AppCompatActivity {
                             // DocumentReference documentReference = fStore.collection("users").document(userID);
                             Map<String, Object> map = new HashMap<>();
                             int points = 10;
-                            map.put("Full Name", name);
                             map.put("Email", email);
-                            map.put("Password", password);
-                            map.put("Points", points);
-                            ref.child(userId).setValue(map);
+                            map.put("username", name);
+                            map.put("points", points);
+                            map.put("imageurl", "");
+                            map.put("id",userId);
+
+                            ref.child(fAuth.getCurrentUser().getUid()).setValue(map);
 
                             Log.i(TAG, " User has been succesfully registerd");
                             final Intent intent = new Intent(RegisterActivity.this, MainActivity.class);

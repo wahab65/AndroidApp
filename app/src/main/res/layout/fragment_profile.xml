@@ -13,7 +13,7 @@
         <!-- TODO: Update blank fragment layout -->
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvUserLevel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -46,11 +46,11 @@
 
         <TextView
             android:id="@+id/tvUserName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="109dp"
+            android:layout_height="47dp"
             android:layout_below="@+id/cardView"
-            android:layout_marginStart="-66dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="-91dp"
+            android:layout_marginTop="7dp"
             android:layout_marginEnd="191dp"
             android:layout_toStartOf="@+id/btnLogout"
             android:layout_toEndOf="@+id/cardView"
@@ -85,7 +85,6 @@
             android:layout_marginStart="90dp"
             android:layout_marginTop="59dp"
             android:layout_marginEnd="35dp"
-            android:layout_toStartOf="@+id/btnLogout"
             android:layout_toEndOf="@+id/cardView"
             android:text="9475"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -95,8 +94,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="74dp"
+            android:layout_height="69dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="35dp"
             app:cardBackgroundColor="@color/white"
@@ -105,9 +104,9 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/ivUserImage"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:id="@+id/ivUserImage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_profile_active" />
 

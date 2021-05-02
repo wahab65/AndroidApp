@@ -1,19 +1,29 @@
 package com.example.deelio.Fragments;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.deelio.LoginActivity;
-import com.example.deelio.MainActivity;
+import com.example.deelio.Model.User;
 import com.example.deelio.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,6 +41,16 @@ public class ProfileFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private Button btnLogout;
+    private FirebaseUser fUser;
+    FirebaseAuth firebaseAuth;
+
+    ImageView ivUserImage;
+    TextView tvUserLevel;
+    TextView tvPoints;
+    TextView tvUserName;
+
+
+    String profileId = "";
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -61,13 +81,35 @@ public class ProfileFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        fUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        String data = getContext().getSharedPreferences("PROFILE", Context.MODE_PRIVATE).getString("profileId", "none");
+
+        if (data.equals("none")) {
+            profileId = fUser.getUid();
+        } else {
+            profileId = data;
+            getContext().getSharedPreferences("PROFILE", Context.MODE_PRIVATE).edit().clear().apply();
+        }
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+
+        ivUserImage = view.findViewById(R.id.ivUserImage2) ;
+        tvUserLevel = view.findViewById(R.id.tvUserLevel);
+        tvPoints = view.findViewById(R.id.tvPoints);
+        tvUserName= view.findViewById(R.id.tvUserName) ;
+
+        userInfo();
+
+        return view;
     }
 
     @Override
@@ -87,5 +129,33 @@ public class ProfileFragment extends Fragment {
         final Intent intent = new Intent(getActivity(), LoginActivity.class);
         startActivity(intent);
         getActivity().finish();
+    }
+
+    private void userInfo() {
+
+        FirebaseDatabase.getInstance().getReference().child("Users").child(profileId).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                User user = dataSnapshot.getValue(User.class);
+
+//                Toast.makeText(getActivity(), "profileId: "+ profileId, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "user was :" +user.getUsername(), Toast.LENGTH_SHORT).show();
+                if (user != null) {
+                    tvUserName.setText(user.getUsername());
+                    tvUserLevel.setText(user.getUserlevel());
+                    tvPoints.setText(user.getPoints());
+                } else {
+                    Toast.makeText(getActivity(), "user was null!!", Toast.LENGTH_SHORT).show();
+                }
+
+               // Glide.with(getView()).load(user.getImageurl()).into(ivUserImage);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
 }

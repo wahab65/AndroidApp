@@ -70,6 +70,17 @@ public class Deal implements Parcelable, Serializable {
     public String getCommentCount() { return CommentCount; }
     public String getDetails() { return Details; }
 
+    public void setUserReference(String userReference) { UserReference = userReference;}
+    public void setDealId(String dealId) { DealId = dealId; }
+    public void setDealImage(String dealImage) { DealImage = dealImage; }
+    public void setTitle(String title) { Title = title; }
+    public void setDealURL(String dealURL) { DealURL = dealURL; }
+    public void setBeforePrice(String beforePrice) { BeforePrice = beforePrice; }
+    public void setAfterPrice(String afterPrice) { AfterPrice = afterPrice; }
+    public void setStoreName(String storeName) { StoreName = storeName; }
+    public void setLikeCount(String likeCount) { LikeCount = likeCount; }
+    public void setCommentCount(String commentCount) { CommentCount = commentCount; }
+    public void setDetails(String details) { Details = details;}
 
     @Override
     public int describeContents() {

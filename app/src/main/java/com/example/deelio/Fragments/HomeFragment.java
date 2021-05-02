@@ -22,8 +22,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.protobuf.StringValue;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -151,6 +153,15 @@ public class HomeFragment extends Fragment {
 
                 for (DataSnapshot snapshot1 : dataSnapshot1.getChildren()) {
                     Deal deal = snapshot1.getValue(Deal.class);
+
+                    //here some mock like and comment counts are being added
+                    Random r = new Random();
+                    int randomNumber = r.nextInt(125 - 2) + 2;
+                    deal.setLikeCount(String.valueOf(randomNumber));
+                    r = new Random();
+                    randomNumber = r.nextInt(58 - 4) + 4;
+                    deal.setCommentCount(String.valueOf(randomNumber));
+
 
                     deals.add(deal);
                 }
