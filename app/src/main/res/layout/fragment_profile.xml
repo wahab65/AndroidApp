@@ -2,111 +2,213 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rounded_white"
     tools:context=".Fragments.ProfileFragment">
 
 
-        <TextView
-            android:id="@+id/tvUserLevel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="90dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="35dp"
-            android:layout_toStartOf="@+id/btnLogout"
-            android:layout_toEndOf="@+id/cardView"
-            android:text="7"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/profile_bk"
+            android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivUserImage2"
+                    android:layout_width="106dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile_active" />
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="13dp"
+                    android:text="John Doe"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Johntest123@yahoo.com"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tvLevel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="106dp"
-            android:layout_toStartOf="@+id/btnLogout"
-            android:layout_toEndOf="@+id/cardView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginBottom="118dp"
             android:text="Level: "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="#3F51B5" />
 
-        <TextView
-            android:id="@+id/tvUserName"
-            android:layout_width="109dp"
-            android:layout_height="47dp"
-            android:layout_below="@+id/cardView"
-            android:layout_marginStart="-91dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="191dp"
-            android:layout_toStartOf="@+id/btnLogout"
-            android:layout_toEndOf="@+id/cardView"
-            android:text="John Doe"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/TwoLinearLayout"
+            android:layout_width="393dp"
+            android:layout_height="469dp"
+            android:layout_below="@+id/LinearLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="59dp"
-            android:layout_marginEnd="106dp"
-            android:layout_toStartOf="@+id/btnLogout"
-            android:layout_toEndOf="@+id/cardView"
-            android:text="Points: "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Account Info"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tvPoints"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="90dp"
-            android:layout_marginTop="59dp"
-            android:layout_marginEnd="35dp"
-            android:layout_toEndOf="@+id/cardView"
-            android:text="9475"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="74dp"
-            android:layout_height="69dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="35dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="250dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+                        <ImageView
+                            android:id="@+id/nameView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/newspaper" />
 
-            <ImageView
-                android:id="@+id/ivUserImage2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_profile_active" />
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/nameView"
+                            android:text="Name"
+                            android:textColor="#3F51B5" />
 
-        </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/emailView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/mail" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="115dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Email"
+                            android:textColor="#3F51B5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/phoneView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/telephone" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="115dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Telephone Number"
+                            android:textColor="#3F51B5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/pointsView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/award" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="115dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Points: "
+                            android:textColor="#3F51B5" />
+
+                        <TextView
+                            android:id="@+id/tvPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="115dp"
+                            android:layout_marginTop="35dp"
+                            android:text="9475" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/levelView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/success" />
+
+                        <TextView
+                            android:id="@+id/tvUserLevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="10" />
+                </RelativeLayout>
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnLogout2"
@@ -114,11 +216,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="144dp"
-            android:layout_marginBottom="279dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
             android:text="LOGOUT" />
-
-
 
 
 </RelativeLayout>
