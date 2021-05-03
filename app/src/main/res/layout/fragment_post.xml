@@ -5,9 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounded_white"
+    android:background="@drawable/post_background"
     tools:context=".Fragments.PostFragment"
     android:id="@+id/frameLayout">
+
 
     <TextView
         android:id="@+id/Text1"
@@ -18,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="-49dp"
-        android:fontFamily="@font/abril_fatface"
+        android:fontFamily="@font/aclonica"
         android:text="Post a New Deal"
         android:textAlignment="center"
 
@@ -38,7 +39,8 @@
         android:layout_marginTop="81dp"
         android:layout_marginEnd="15dp"
         android:ems="10"
-        android:hint="Deal Name"
+        android:fontFamily="@font/aclonica"
+        android:hint="Title"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteY="77dp" />
 
@@ -53,7 +55,8 @@
         android:layout_marginEnd="15dp"
         android:layout_toEndOf="@+id/imageView5"
         android:ems="10"
-        android:hint="Deal URL"
+        android:fontFamily="@font/aclonica"
+        android:hint="Paste deal URL here..."
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -78,7 +81,8 @@
         android:layout_marginTop="189dp"
         android:layout_toEndOf="@+id/imageView6"
         android:ems="10"
-        android:hint="Deal Price"
+        android:fontFamily="@font/aclonica"
+        android:hint="Price (Optional)"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         tools:layout_editor_absoluteY="184dp" />
@@ -94,7 +98,8 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Company (Optional)"
+        android:fontFamily="@font/aclonica"
+        android:hint="Site the deal is from"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="184dp" />
@@ -120,7 +125,8 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:hint="Description"
+        android:fontFamily="@font/aclonica"
+        android:hint="Type at least 5 words of additional info here! What else should the community know? (Include important stuff: product details, coupon code, expiration date, etc.)"
         android:inputType="textLongMessage"
         android:textAlignment="viewStart"
         android:textSize="12sp" />
@@ -148,6 +154,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="83dp"
         android:background="@color/teal_700"
+        android:fontFamily="@font/aclonica"
         android:text="Submit Deal" />
 
     <ProgressBar
