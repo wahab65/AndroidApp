@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -20,6 +21,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -34,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
     FirebaseAuth fAuth;
     EditText fullName, registerEmail, registerPassword;
     FirebaseFirestore fStore;
+    DatabaseReference rootRef;
     String userID;
 
     public static final String TAG = "RegisterActivity";
@@ -43,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        this.getSupportActionBar().hide();
+//        this.getSupportActionBar().hide();
 
         //list all element bindings here
         tvGoToLoginActivity= (TextView)findViewById(R.id.loginNregisterSwitcher);
@@ -99,39 +103,55 @@ public class RegisterActivity extends AppCompatActivity {
                 fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, "User Successfully Created", Toast.LENGTH_SHORT).show();
-                            userID = fAuth.getCurrentUser().getUid();
-                            DocumentReference documentReference = fStore.collection("users").document(userID);
-                            Map<String,Object> user = new HashMap<>();
-                            user.put("Full Name",name);
-                            user.put("Email", email);
-                            user.put("Password", password);
-                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
+                            String userId = ref.push().getKey();
+
+                            // DocumentReference documentReference = fStore.collection("users").document(userID);
+                            Map<String, Object> map = new HashMap<>();
+                            int points = 10;
+                            map.put("Email", email);
+                            map.put("username", name);
+                            map.put("points", points);
+                            map.put("imageurl", "");
+                            map.put("id", userId);
+
+                            ref.child(fAuth.getCurrentUser().getUid()).setValue(map);
+
+                            Log.i(TAG, " User has been succesfully registerd");
+                            final Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
+
+
+                            /*documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    Log.d(TAG, "onSuccess: user profile is created for "+ userID);
+                                    Log.d(TAG, "onSuccess: user profile is created for " + userID);
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG, "onFailure to create user: " +e.toString());
+                                    Log.d(TAG, "onFailure to create user: " + e.toString());
                                 }
                             });
                             Log.i(TAG, " User has been succesfully registerd");
                             final Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                             startActivity(intent);
                             finish();
-                        }else{
+                        } else {
                             Toast.makeText(RegisterActivity.this, "Error: !", Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                             Log.e(TAG, "Failed to Register User", task.getException());
 
                         }
+*/
+
+                    }
                     }
                 });
 
             }
         });
-    }
-}
+    }}

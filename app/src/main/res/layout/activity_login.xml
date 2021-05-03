@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/login_bk"
     tools:context=".LoginActivity"
     tools:visibility="visible">
 
@@ -16,138 +16,126 @@
         android:alpha="0"
         android:fontFamily="@font/aclonica"
         android:text="Dealio"
-        android:textColor="#FFFFFF"
+        android:textColor="#394DBA"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155"
         tools:visibility="gone" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="155dp"
         android:fontFamily="@font/aclonica"
-        android:text="Shop•Save•Earn"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:text="Shop, Save, Earn"
+        android:textColor="#3F51B5"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="300dp"
         android:layout_height="31dp"
-        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="218dp"
         android:fontFamily="@font/aclonica"
         android:text="Login to your Existing Account"
-        android:textColor="#FFEB3B"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:textColor="#3F51B5"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/loginEmail"
-        android:layout_width="0dp"
+        style="@style/modifiedEditText"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="12dp"
-        android:background="@color/black"
-        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginBottom="18dp"
         android:ems="10"
         android:fontFamily="@font/aclonica"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:maxLines="1"
         android:padding="10dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:textColor="#000000"
+        android:textColorHint="#FFC107" />
 
     <EditText
         android:id="@+id/loginPassword"
-        android:layout_width="0dp"
+        style="@style/modifiedEditText"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:background="@color/black"
-        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="317dp"
         android:ems="10"
         android:fontFamily="@font/aclonica"
         android:hint="Password"
         android:inputType="textPassword"
+        android:maxLines="1"
         android:padding="10dp"
-        android:textColor="#FAFAFA"
-        android:textColorHint="#FBFBFB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
+        android:textColor="#000000"
+        android:textColorHint="#FFC107" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="0dp"
+        style="@style/loginButton"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="@color/yellow"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="224dp"
         android:fontFamily="@font/aclonica"
         android:text="Login"
-        android:textColor="@color/red"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPassword"
-        app:rippleColor="#F8F0F0" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/loginNregisterSwitcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="194dp"
         android:clickable="true"
         android:onClick="onClick"
         android:text="Don't Have An Account?"
+        android:textColor="#37448E"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
         tools:ignore="OnClick" />
-
-    <ImageView
-        android:id="@+id/imageViewAnimLogo"
-        android:layout_width="255dp"
-        android:layout_height="81dp"
-        android:scaleX="5"
-        android:scaleY="5"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/logoanimlist" />
 
     <ProgressBar
         android:id="@+id/loginprogressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginNregisterSwitcher" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="288dp"
+        android:layout_marginBottom="132dp"
+        android:visibility="invisible" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="105dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Dealio"
+        android:textColor="#3F51B5"
+        android:textSize="36sp" />
+
+</RelativeLayout>

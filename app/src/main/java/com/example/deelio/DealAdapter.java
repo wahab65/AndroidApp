@@ -7,26 +7,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.deelio.Model.Deal;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.io.Serializable;
 import java.util.List;
 
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
-
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>{
+public class DealAdapter extends RecyclerView.Adapter<DealAdapter.ViewHolder>{
 
     List<Deal> deals;
     Context context;
+    private FirebaseUser firebaseUser;
 
-    public RecyclerViewAdapter(List<Deal> deals) {
+    public DealAdapter(List<Deal> deals, FirebaseUser firebaseUser) {
         this.deals = deals;
+        this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
     }
 
     @NonNull
@@ -91,8 +92,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         @Override
         public void onClick(View v) {
-            //go to Deal detail activity
-            Toast.makeText(context, "total deals : "+deals.size(), Toast.LENGTH_SHORT).show();
+            int position = getAdapterPosition();
+            Deal deal = deals.get(position);
+            Intent intent = new Intent(context, DealDetailsActivity.class);
+            intent.putExtra(Deal.class.getSimpleName(), (Serializable) deal);
+            context.startActivity(intent);
         }
 
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounded_white"
+    android:background="@color/white"
     tools:context=".Fragments.HomeFragment">
 
     <!-- Construction:  A recylcerView
@@ -25,7 +25,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:background="#51E88181"
+            android:background="#51FFFFFF"
             app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
         <androidx.appcompat.widget.Toolbar
@@ -55,20 +55,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                app:cardCornerRadius="250dp">
-
                 <ImageView
                     android:id="@+id/ivUserImage"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_profile_active" />
-
-            </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
