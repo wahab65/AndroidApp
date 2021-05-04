@@ -79,18 +79,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-
-
-
-
-
-
-
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
-
-
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
@@ -99,7 +89,7 @@ public class HomeFragment extends Fragment {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 String email =null;
                 if (user != null)  email = user.getEmail();
-                Toast.makeText(getActivity(),"Logged in as: "+email,Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(),"Logged in as: "+email,Toast.LENGTH_SHORT).show();
         // ===== until this line ////
 
         RecyclerView rvDeals = view.findViewById(R.id.rvTopDeals);

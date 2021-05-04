@@ -67,9 +67,10 @@ public class Deal implements Parcelable, Serializable {
     public String getAfterPrice() { return AfterPrice; }
     public String getStoreName() { return StoreName; }
     public String getLikeCount() { return LikeCount; }
+    public String getDealURL(){ return DealURL; }
     public String getCommentCount() { return CommentCount; }
     public String getDetails() { return Details; }
-    public String getDealURL() { return DealURL; }
+
 
     public void setUserReference(String userReference) { UserReference = userReference;}
     public void setDealId(String dealId) { DealId = dealId; }

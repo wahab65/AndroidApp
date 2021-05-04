@@ -13,7 +13,7 @@
         android:layout_width="379dp"
         android:layout_height="104dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="168dp"
         android:text="Get 40% Off Electronics | Best Buy Coupon Shop limited-time clearance deals on everything from 4K TVs "
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,21 +46,21 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="44dp"
         android:text="Brand:"
-        app:layout_constraintEnd_toStartOf="@+id/tv_StoreName2"
-        app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvDealTitle"
+        tools:layout_editor_absoluteX="262dp" />
 
     <TextView
         android:id="@+id/tv_StoreName2"
         android:layout_width="63dp"
         android:layout_height="23dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:text="BestBuy"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
 
@@ -90,20 +90,17 @@
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselView"
-        android:layout_width="363dp"
-        android:layout_height="222dp"
+        android:layout_width="395dp"
+        android:layout_height="237dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
         app:fillColor="@color/red"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:pageColor="#00000000"
         app:radius="6dp"
         app:slideInterval="3000"
         app:strokeColor="#1F72E1"
-        app:strokeWidth="5dp">
+        app:strokeWidth="5dp"
+        tools:layout_editor_absoluteY="10dp">
 
     </com.synnapps.carouselview.CarouselView>
 
@@ -134,4 +131,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetails2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Description:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="444dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

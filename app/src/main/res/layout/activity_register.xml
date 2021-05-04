@@ -48,7 +48,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="10dp"
-        android:textColor="#171616"
+        android:textColor="#FAFAFA"
         android:textColorHint="#FFC107" />
 
     <TextView
@@ -112,7 +112,7 @@
         android:inputType="textPersonName"
         android:maxLines="1"
         android:padding="10dp"
-        android:textColor="#0C0C0C"
+        android:textColor="#F8F2F2"
         android:textColorHint="#FFC107" />
 
     <TextView

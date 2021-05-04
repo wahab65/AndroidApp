@@ -1,27 +1,61 @@
+com/example/deelio/databinding/FragmentPostBinding.java
+ com.example.deelio.databinding.FragmentPostBinding
 com/example/deelio/LoginActivity.java
  com.example.deelio.LoginActivity
  com.example.deelio.LoginActivity$1
  com.example.deelio.LoginActivity$1$1
  com.example.deelio.LoginActivity$2
- com.example.deelio.LoginActivity$3
-com/example/deelio/Fragments/PostFragment.java
- com.example.deelio.Fragments.PostFragment
-com/example/deelio/MainActivity.java
- com.example.deelio.MainActivity
- com.example.deelio.MainActivity$1
 com/example/deelio/Model/Deal.java
  com.example.deelio.Model.Deal
-com/example/deelio/Fragments/HomeFragment.java
- com.example.deelio.Fragments.HomeFragment
+ com.example.deelio.Model.Deal$1
+com/example/deelio/Fragments/PostFragment.java
+ com.example.deelio.Fragments.PostFragment
+ com.example.deelio.Fragments.PostFragment$1
+ com.example.deelio.Fragments.PostFragment$2
+ com.example.deelio.Fragments.PostFragment$3
+ com.example.deelio.Fragments.PostFragment$4
+ com.example.deelio.Fragments.PostFragment$5
+com/example/deelio/DealAdapter.java
+ com.example.deelio.DealAdapter
+ com.example.deelio.DealAdapter$ViewHolder
+com/example/deelio/databinding/FragmentProfileBinding.java
+ com.example.deelio.databinding.FragmentProfileBinding
+com/example/deelio/databinding/ActivityMainBinding.java
+ com.example.deelio.databinding.ActivityMainBinding
 com/example/deelio/RegisterActivity.java
  com.example.deelio.RegisterActivity
  com.example.deelio.RegisterActivity$1
  com.example.deelio.RegisterActivity$2
  com.example.deelio.RegisterActivity$2$1
- com.example.deelio.RegisterActivity$2$1$1
- com.example.deelio.RegisterActivity$2$1$2
+com/example/deelio/Model/Deals.java
+ com.example.deelio.Model.Deals
+com/example/deelio/databinding/DealRvLayoutBinding.java
+ com.example.deelio.databinding.DealRvLayoutBinding
+com/example/deelio/DealDetailsActivity.java
+ com.example.deelio.DealDetailsActivity
+ com.example.deelio.DealDetailsActivity$1
+com/example/deelio/databinding/ActivityRegisterBinding.java
+ com.example.deelio.databinding.ActivityRegisterBinding
+com/example/deelio/databinding/ActivityDealDetailsBinding.java
+ com.example.deelio.databinding.ActivityDealDetailsBinding
+com/example/deelio/databinding/ActivityLoginBinding.java
+ com.example.deelio.databinding.ActivityLoginBinding
+com/example/deelio/databinding/FragmentHomeBinding.java
+ com.example.deelio.databinding.FragmentHomeBinding
+com/example/deelio/Fragments/HomeFragment.java
+ com.example.deelio.Fragments.HomeFragment
+ com.example.deelio.Fragments.HomeFragment$1
+ com.example.deelio.Fragments.HomeFragment$2
+com/example/deelio/Model/User.java
+ com.example.deelio.Model.User
+com/example/deelio/BuildConfig.java
+ com.example.deelio.BuildConfig
+com/example/deelio/MainActivity.java
+ com.example.deelio.MainActivity
+ com.example.deelio.MainActivity$1
+ com.example.deelio.MainActivity$2
+ com.example.deelio.MainActivity$3
 com/example/deelio/Fragments/ProfileFragment.java
  com.example.deelio.Fragments.ProfileFragment
  com.example.deelio.Fragments.ProfileFragment$1
-com/example/deelio/BuildConfig.java
- com.example.deelio.BuildConfig
+ com.example.deelio.Fragments.ProfileFragment$2
