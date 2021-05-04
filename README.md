@@ -6,6 +6,33 @@ For example lets suppose a user is shopping online at BestBuy and he sees an ext
 
 So that question arises that why would one recommend to other users. Once a user posts a deal and when other users use that deal/link to buy the product, the user will be able to earn points. These points can be changed into money that he or she can use to buy other products on the internet through this app.
 
+## Unit 12
+
+### User Stories
+
+#### REQUIRED
+
+- [x] Create detail activity similar to the one on Flixter App
+- [x] Add 'See Deal' button that takes you to the respective app of the deal
+- [x] Parse information onto the activity 
+- [x] Open the camera app or gallery app to select or take pictures.
+- [x] Setup the fragment layout and allow it to accept URLs from different apps.
+- [x] Save post to Parse when save button is tapped
+- [x] Return to home feed on cancel button
+- [x] Trigger home feed to reload data to retrieve new post
+
+### Optional
+
+- [x] Improve the bottom navigation bar
+- [x] Improve the UI of the fragments
+     - [x] Home Fragment
+     - [ ] Post Fragment
+     - [x] Profile Fragment
+- [x] Be able to link the deals with the respected App like Amazon, Walmart, and BestBuy      
+
+### App Walkthough GIF
+<img src="https://github.com/wahab65/AndroidApp/blob/master/wt4.gif" width=350><br>
+
 ## Unit 11
 
 ### User Stories
@@ -59,7 +86,7 @@ Here's a walkthrough of implemented user stories:
 <br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt1.gif" width=350><br>
 <img src="https://github.com/wahab65/AndroidApp/blob/master/wt2.gif" width=350><br>
-<img src="https://github.com/wahab65/AndroidApp/blob/master/wt4.gif" width=350><br>
+
 
 
 
