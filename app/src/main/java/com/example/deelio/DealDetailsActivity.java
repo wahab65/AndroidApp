@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -66,6 +68,14 @@ public class DealDetailsActivity extends AppCompatActivity {
         dealImages[0]= deal.getDealImage();
         dealImages[1]= deal.getDealImage();
         dealImages[2]= deal.getDealImage();
+
+        UrlButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String urlToVisit= deal.getDealURL();
+                openWebURL(urlToVisit);
+            }
+        });
     }
 
 
@@ -81,4 +91,9 @@ public class DealDetailsActivity extends AppCompatActivity {
 
         }
     };
+    public void openWebURL( String inURL ) {
+        Intent i = new Intent( Intent.ACTION_VIEW , Uri.parse( inURL ) );
+        startActivity( i );
+    }
+
 }

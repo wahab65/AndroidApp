@@ -69,6 +69,7 @@ public class Deal implements Parcelable, Serializable {
     public String getLikeCount() { return LikeCount; }
     public String getCommentCount() { return CommentCount; }
     public String getDetails() { return Details; }
+    public String getDealURL() { return DealURL; }
 
     public void setUserReference(String userReference) { UserReference = userReference;}
     public void setDealId(String dealId) { DealId = dealId; }
@@ -81,6 +82,7 @@ public class Deal implements Parcelable, Serializable {
     public void setLikeCount(String likeCount) { LikeCount = likeCount; }
     public void setCommentCount(String commentCount) { CommentCount = commentCount; }
     public void setDetails(String details) { Details = details;}
+
 
     @Override
     public int describeContents() {
