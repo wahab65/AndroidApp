@@ -23,9 +23,7 @@
         android:textAlignment="center"
 
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="36sp"
-        tools:layout_conversion_absoluteHeight="731dp"
-        tools:layout_conversion_absoluteWidth="411dp" />
+        android:textSize="36sp" />
 
     <EditText
         android:id="@+id/dealName"
@@ -41,8 +39,7 @@
         android:ems="10"
         android:fontFamily="@font/aclonica"
         android:hint="Title"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteY="77dp" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/dealURL"
@@ -59,7 +56,7 @@
         android:fontFamily="@font/aclonica"
         android:hint="Paste deal URL here..."
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textSize="14sp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -69,9 +66,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:src="@drawable/url"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="133dp" />
+        android:src="@drawable/url" />
 
     <EditText
         android:id="@+id/dealPrice"
@@ -86,8 +81,7 @@
         android:fontFamily="@font/aclonica"
         android:hint="Price (Optional)"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        tools:layout_editor_absoluteY="184dp" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/brandName"
@@ -104,8 +98,7 @@
         android:fontFamily="@font/aclonica"
         android:hint="Site the deal is from"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="184dp" />
+        android:textSize="14sp" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -115,9 +108,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:src="@drawable/money"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="184dp" />
+        android:src="@drawable/money" />
 
     <EditText
         android:id="@+id/dealDescription"
@@ -130,8 +121,9 @@
         android:backgroundTint="@color/primaryTextColor"
         android:ems="10"
         android:fontFamily="@font/aclonica"
-        android:hint="Type at least 5 words of additional info here! What else should the community know? (Include important stuff: product details, coupon code, expiration date, etc.)"
+        android:hint="Type at least 5 words of additional info here! \nWhat else should the community know? \n(Include important stuff: product details, coupon code, \nexpiration date, etc.)"
         android:inputType="textLongMessage"
+        android:singleLine="false"
         android:textAlignment="viewStart"
         android:textSize="12sp" />
 
@@ -163,7 +155,6 @@
 
     <ProgressBar
         android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
