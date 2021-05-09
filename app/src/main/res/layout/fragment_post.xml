@@ -136,9 +136,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="82dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="26dp"
-        android:layout_marginEnd="94dp"
+        android:layout_marginEnd="88dp"
         android:layout_marginBottom="143dp"
         android:src="@drawable/image_upload" />
 
