@@ -1,16 +1,19 @@
 package com.example.deelio.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.deelio.Model.Deal;
@@ -42,6 +45,7 @@ public class HomeFragment extends Fragment {
     ArrayList<Deal> deals = new ArrayList<>();;
     RecyclerView rvDeals;
     FirebaseUser firebaseUser;
+    private ImageView ivUserImage;
 
 
 
@@ -93,7 +97,7 @@ public class HomeFragment extends Fragment {
         // ===== until this line ////
 
         RecyclerView rvDeals = view.findViewById(R.id.rvTopDeals);
-
+        ivUserImage = view.findViewById(R.id.ivUserImage);
         //construct adapter
         rvAdapter = new DealAdapter(deals, firebaseUser);
 
@@ -108,6 +112,16 @@ public class HomeFragment extends Fragment {
         rvDeals.setAdapter(rvAdapter);
         rvAdapter.notifyDataSetChanged();
         rvDeals.scrollToPosition(0);
+        ivUserImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new ProfileFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+
+                fragmentManager.beginTransaction().replace(R.id.layout, fragment).commit();
+            }
+        });
+
 
 
     }

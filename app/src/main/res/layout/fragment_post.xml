@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/postbackground"
     tools:context=".Fragments.PostFragment">
 
 
@@ -149,7 +149,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="83dp"
-        android:background="@color/teal_700"
+        android:backgroundTint="#FC8822"
         android:fontFamily="@font/aclonica"
         android:text="Submit Deal" />
 

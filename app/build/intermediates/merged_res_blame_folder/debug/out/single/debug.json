@@ -68,6 +68,10 @@
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\frame0.png"
     },
     {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_white.xml.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\rounded_white.xml"
     },
@@ -100,6 +104,10 @@
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\frame_36.png"
     },
     {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_back2.jpg.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-v24\\back2.jpg"
+    },
+    {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.jpg.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\background.jpg"
     },
@@ -110,6 +118,10 @@
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_deal_details.xml.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\layout\\activity_deal_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bck.jpg.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-v24\\bck.jpg"
     },
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_telephone.png.flat",
@@ -216,6 +228,10 @@
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-anydpi\\ic_profile_inactive.xml"
     },
     {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_7.png.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\frame_7.png"
     },
@@ -308,6 +324,10 @@
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-mdpi\\ic_add_inactive.png"
     },
     {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_postbackground.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-v24\\postbackground.png"
+    },
+    {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_add_active.xml.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_add_active.xml"
     },
@@ -334,6 +354,10 @@
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_thumb_up.xml.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_thumb_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_mybck.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-v24\\mybck.png"
     },
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -460,6 +484,10 @@
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\frame_16.png"
     },
     {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_2.png.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\frame_2.png"
     },
@@ -520,6 +548,10 @@
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\frame_41.png"
     },
     {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_splash.png.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_splash.png"
     },
@@ -540,6 +572,10 @@
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\frame_14.png"
     },
     {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_tab.xml.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\profile_tab.xml"
     },
@@ -554,6 +590,10 @@
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_success.png.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable\\success.png"
+    },
+    {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_postbck.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-v24\\postbck.png"
     },
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frame_44.png.flat",
@@ -590,6 +630,10 @@
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_mybackground.png.flat",
+        "source": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\src\\main\\res\\drawable-v24\\mybackground.png"
     },
     {
         "merged": "C:\\Users\\smart\\AndroidStudioProjects\\Deelio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_add_inactive.png.flat",
