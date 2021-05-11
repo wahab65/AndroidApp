@@ -87,9 +87,18 @@ public class DealDetailsActivity extends AppCompatActivity {
         public void setImageForPosition(int position, ImageView imageView) {
 
 
+
+//            Glide.with(ctx)
+//                    .load(dealImages[position])  // TO-DO:    change this to dealImages array
+//                    .override(carouselView.getWidth(), Target.SIZE_ORIGINAL)
+//                    .into(imageView);
+            
+            imageView.setAdjustViewBounds(true);
             Glide.with(ctx)
                     .load(dealImages[position])  // TO-DO:    change this to dealImages array
                     .override(carouselView.getWidth(), Target.SIZE_ORIGINAL)
+                    .load(dealImages[position])
+                    .apply(RequestOptions.fitCenterTransform())
                     .into(imageView);
 
         }
