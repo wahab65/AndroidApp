@@ -154,25 +154,29 @@
         android:layout_width="55dp"
         android:layout_height="58dp"
         android:layout_marginStart="92dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/UrlButton"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
-        app:srcCompat="@drawable/ic_baseline_thumb_down_off_alt_24"
-        tools:layout_editor_absoluteY="582dp" />
+        app:srcCompat="@drawable/ic_baseline_thumb_down_off_alt_24" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="60dp"
         android:layout_height="56dp"
-        app:srcCompat="@drawable/ic_baseline_thumb_up_off_alt_24"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="584dp" />
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/UrlButton"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:srcCompat="@drawable/ic_baseline_thumb_up_off_alt_24" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="50dp"
         android:layout_height="57dp"
         android:layout_marginStart="84dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/UrlButton"
         app:layout_constraintStart_toStartOf="@+id/imageView9"
-        app:srcCompat="@drawable/ic_baseline_share_24"
-        tools:layout_editor_absoluteY="584dp" />
+        app:srcCompat="@drawable/ic_baseline_share_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
