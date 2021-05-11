@@ -11,6 +11,21 @@ So that question arises that why would one recommend to other users. Once a user
 ### User Stories
 
 #### REQUIRED
+- [x] Finish up the UI
+- [x] Fix all the bugs
+- [x] Work on the detail activity UI
+
+### Optional 
+ EVERYTHING IS COMPLETE
+ 
+### App Walkthrough GIF
+<img src="https://github.com/wahab65/AndroidApp/blob/main/FINAL_WALKTHROUGH.gif" width=350><br>
+
+## Unit 12
+
+### User Stories
+
+#### REQUIRED
 
 - [x] Create detail activity similar to the one on Flixter App
 - [x] Add 'See Deal' button that takes you to the respective app of the deal
