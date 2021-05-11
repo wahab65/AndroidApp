@@ -9,15 +9,6 @@
     tools:context=".DealDetailsActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="67dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvDetails2"
-        app:srcCompat="@drawable/ic_thumb_up"
-        tools:layout_editor_absoluteX="144dp" />
-
     <TextView
         android:id="@+id/tvDetails2"
         android:layout_width="379dp"
@@ -43,52 +34,51 @@
 
     <TextView
         android:id="@+id/tv_BeforePrice2"
-        android:layout_width="93dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="169dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/strikethrough"
-        android:text="$600this shud be strikethru"
+        android:fontFamily="@font/aclonica"
+        android:text="$599.99"
         android:textColor="#E40C0C"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="159dp"
         android:layout_height="23dp"
         android:layout_marginStart="240dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
         android:text="Posted By:"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tv_StoreName2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
 
     <TextView
         android:id="@+id/tv_StoreName2"
-        android:layout_width="146dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/getUsername"
+        android:layout_width="145dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/user.getUsername()"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.905"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="253dp" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="111dp"
-        android:layout_height="81dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:text="449.99"
-        android:textColor="#E40C0C"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="$449.99"
+        android:textColor="@color/green"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
@@ -147,6 +137,7 @@
         android:layout_marginTop="37dp"
         android:fontFamily="@font/aclonica"
         android:text="Good deal?"
+        android:textColor="@color/green"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetails2" />
@@ -157,5 +148,31 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="244dp"
         tools:layout_editor_absoluteY="538dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="55dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="92dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:srcCompat="@drawable/ic_baseline_thumb_down_off_alt_24"
+        tools:layout_editor_absoluteY="582dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/ic_baseline_thumb_up_off_alt_24"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="84dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:srcCompat="@drawable/ic_baseline_share_24"
+        tools:layout_editor_absoluteY="584dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
