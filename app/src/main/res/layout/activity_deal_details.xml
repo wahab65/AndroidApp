@@ -9,12 +9,22 @@
     tools:context=".DealDetailsActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="67dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetails2"
+        app:srcCompat="@drawable/ic_thumb_up"
+        tools:layout_editor_absoluteX="144dp" />
+
     <TextView
         android:id="@+id/tvDetails2"
         android:layout_width="379dp"
         android:layout_height="104dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="156dp"
+        android:fontFamily="@font/aclonica"
         android:text="Get 40% Off Electronics | Best Buy Coupon Shop limited-time clearance deals on everything from 4K TVs "
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,42 +35,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:fontFamily="@font/aclonica"
         android:text="Description:"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="After:"
-        android:textColor="#208F25"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        tools:layout_editor_absoluteY="441dp" />
 
     <TextView
         android:id="@+id/tv_BeforePrice2"
-        android:layout_width="106dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="28dp"
-        android:text="$600"
+        android:layout_width="93dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/strikethrough"
+        android:text="$600this shud be strikethru"
         android:textColor="#E40C0C"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="159dp"
+        android:layout_height="23dp"
         android:layout_marginStart="240dp"
-        android:layout_marginTop="52dp"
-        android:text="Brand:"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Posted By:"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tv_StoreName2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -69,39 +71,27 @@
 
     <TextView
         android:id="@+id/tv_StoreName2"
-        android:layout_width="63dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="52dp"
-        android:text="BestBuy"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/getUsername"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="111dp"
+        android:layout_height="81dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
-        android:text="Before: "
+        android:text="449.99"
         android:textColor="#E40C0C"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDealTitle" />
-
-    <TextView
-        android:id="@+id/tv_AfterPrice2"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:text="$400"
-        android:textColor="#208F25"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/tv_BeforePrice2" />
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselView"
@@ -127,6 +117,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
         android:text='LG 65" TV on Sale'
         android:textAlignment="center"
         android:textColor="#0B0707"
@@ -136,15 +127,35 @@
 
     <Button
         android:id="@+id/UrlButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#FC8822"
+        android:layout_width="399dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="@color/green"
         android:backgroundTintMode="add"
+        android:fontFamily="@font/aclonica"
         android:text="View Deal"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetails2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Good deal?"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetails2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="538dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
