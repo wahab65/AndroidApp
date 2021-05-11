@@ -16,7 +16,7 @@ So that question arises that why would one recommend to other users. Once a user
 - [x] Work on the detail activity UI
 
 ### Optional 
- EVERYTHING IS COMPLETE
+- [ ] Imrpove the UI of the bottom navigation bar
  
 ### App Walkthrough GIF
 <img src="https://github.com/wahab65/AndroidApp/blob/main/FINAL_WALKTHROUGH.gif" width=350><br>
