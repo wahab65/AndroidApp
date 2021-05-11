@@ -49,7 +49,8 @@ public class ProfileFragment extends Fragment {
     TextView tvPoints;
     TextView tvUserName;
     TextView tvEmail;
-
+    TextView useremail;
+    TextView name;
 
 
     String profileId = "";
@@ -109,6 +110,8 @@ public class ProfileFragment extends Fragment {
         tvPoints = view.findViewById(R.id.tvPoints);
         tvUserName= view.findViewById(R.id.tvUserName) ;
         tvEmail= view.findViewById(R.id.tvEmail) ;
+        useremail = view.findViewById(R.id.useremail);
+        name = view.findViewById(R.id.name);
 
 
 
@@ -150,6 +153,8 @@ public class ProfileFragment extends Fragment {
                     tvEmail.setText(user.getEmail());
                     tvUserLevel.setText(user.getUserlevel());
                     tvPoints.setText(user.getPoints());
+                    useremail.setText(user.getEmail());
+                    name.setText(user.getUsername());
                 } else {
                     Toast.makeText(getActivity(), "user was null!!", Toast.LENGTH_SHORT).show();
                 }
