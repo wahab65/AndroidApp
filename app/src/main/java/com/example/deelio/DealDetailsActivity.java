@@ -19,6 +19,8 @@ import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 import com.example.deelio.Model.Deal;
+import com.example.deelio.Model.User;
+import com.google.firebase.database.DataSnapshot;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
@@ -47,6 +49,9 @@ public class DealDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_deal_details);
         ctx=getApplicationContext();
 
+        User user = new User();
+
+
         carouselView= findViewById(R.id.carouselView);
         carouselView.setImageListener(imageListener);
         carouselView.setPageCount(3);
@@ -62,9 +67,9 @@ public class DealDetailsActivity extends AppCompatActivity {
 
         tvDealTitle.setText(deal.getTitle());
         tv_BeforePrice2.setText(deal.getBeforePrice());
-        tv_AfterPrice2.setText(deal.getAfterPrice());
+//        tv_AfterPrice2.setText(deal.getAfterPrice());
         tvDetails2.setText(deal.getDetails());
-        tv_StoreName2.setText(deal.getStoreName());
+        tv_StoreName2.setText(user.getUsername());
 
         dealImages[0]= deal.getDealImage();
         dealImages[1]= deal.getDealImage();

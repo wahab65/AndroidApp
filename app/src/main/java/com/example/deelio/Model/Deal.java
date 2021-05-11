@@ -70,6 +70,8 @@ public class Deal implements Parcelable, Serializable {
     public String getDealURL(){ return DealURL; }
     public String getCommentCount() { return CommentCount; }
     public String getDetails() { return Details; }
+    public String getUserReference() {return UserReference;}
+
 
 
     public void setUserReference(String userReference) { UserReference = userReference;}

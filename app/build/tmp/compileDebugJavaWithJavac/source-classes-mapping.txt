@@ -35,10 +35,8 @@ com/example/deelio/Fragments/ProfileFragment.java
  com.example.deelio.Fragments.ProfileFragment$2
 com/example/deelio/databinding/DealRvLayoutBinding.java
  com.example.deelio.databinding.DealRvLayoutBinding
-com/example/deelio/DealDetailsActivity.java
- com.example.deelio.DealDetailsActivity
- com.example.deelio.DealDetailsActivity$1
- com.example.deelio.DealDetailsActivity$2
+com/example/deelio/Model/Deals.java
+ com.example.deelio.Model.Deals
 com/example/deelio/databinding/ActivityRegisterBinding.java
  com.example.deelio.databinding.ActivityRegisterBinding
 com/example/deelio/databinding/ActivityDealDetailsBinding.java
@@ -56,8 +54,10 @@ com/example/deelio/Model/User.java
  com.example.deelio.Model.User
 com/example/deelio/BuildConfig.java
  com.example.deelio.BuildConfig
-com/example/deelio/Model/Deals.java
- com.example.deelio.Model.Deals
+com/example/deelio/DealDetailsActivity.java
+ com.example.deelio.DealDetailsActivity
+ com.example.deelio.DealDetailsActivity$1
+ com.example.deelio.DealDetailsActivity$2
 com/example/deelio/DealAdapter.java
  com.example.deelio.DealAdapter
  com.example.deelio.DealAdapter$ViewHolder
